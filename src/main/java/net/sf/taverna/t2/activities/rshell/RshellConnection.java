@@ -52,7 +52,7 @@ public class RshellConnection extends RConnection {
 		this.keepSessionAlive = connectionSettings.isKeepSessionAlive();
 
 		String username = connectionSettings.getUsername();
-		if (!username.equals("")) {
+		if (!"".equals(username)) {
 			this.login(username, connectionSettings.getPassword());
 		}
 	}

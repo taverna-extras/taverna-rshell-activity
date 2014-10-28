@@ -9,6 +9,7 @@
 	<groupId>net.sf.taverna.t2.activities</groupId>
 	<artifactId>rshell-activity</artifactId>
 	<packaging>bundle</packaging>
+        <version>2.0.1-SNAPSHOT</version>
 	<name>Taverna 2 Rshell Activity</name>
 	<build>
 		<plugins>
@@ -68,7 +69,7 @@
 		<dependency>
 			<groupId>net.sf.taverna.t2.activities</groupId>
 			<artifactId>activity-test-utils</artifactId>
-			<version>${project.version}</version>
+			<version>${t2.activities.version}</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>

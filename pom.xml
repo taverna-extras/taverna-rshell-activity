@@ -2,15 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>net.sf.taverna</groupId>
-    <artifactId>taverna-parent</artifactId>
-    <version>3.0.1-SNAPSHOT</version>
+<!-- TODO: Use our own parent -->
+		<groupId>org.apache.taverna</groupId>
+		<artifactId>taverna-parent</artifactId>
+		<version>1-incubating</version>
   </parent>
 	<groupId>net.sf.taverna.t2.activities</groupId>
 	<artifactId>rshell-activity</artifactId>
 	<packaging>bundle</packaging>
-        <version>2.0.1-SNAPSHOT</version>
-	<name>Taverna 2 Rshell Activity</name>
+        <version>2.1.0-SNAPSHOT</version>
+	<name>Taverna Rshell Activity</name>
+<properties>
+  <taverna.engine.version>3.1.0-incubating-SNAPSHOT</taverna.engine.version>
+</properties>
 	<build>
 		<plugins>
 			<plugin>
@@ -26,16 +30,34 @@
 			</plugin>
 		</plugins>
 	</build>
+<licenses>
+    <license>
+      <name>LGPL 2.1</name>
+      <url>http://www.gnu.org/licenses/old-licenses/lgpl-2.1</url>
+      <distribution>repo</distribution>
+    </license>
+</licenses>
 	<dependencies>
 		<dependency>
-			<groupId>net.sf.taverna.t2.core</groupId>
-			<artifactId>workflowmodel-api</artifactId>
-			<version>${t2.core.version}</version>
+			<groupId>org.apache.taverna.engine</groupId>
+			<artifactId>taverna-workflowmodel-api</artifactId>
+			<version>${taverna.engine.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>net.sf.taverna.t2.core</groupId>
-			<artifactId>reference-api</artifactId>
-			<version>${t2.core.version}</version>
+			<groupId>org.apache.taverna.engine</groupId>
+			<artifactId>taverna-reference-api</artifactId>
+			<version>${taverna.engine.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.taverna.engine</groupId>
+			<artifactId>taverna-credential-manager</artifactId>
+			<version>${taverna.engine.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.taverna.engine</groupId>
+			<artifactId>activity-test-utils</artifactId>
+			<version>${taverna.engine.version}</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.rosuda</groupId>
@@ -54,11 +76,6 @@
 			<artifactId>com.springsource.org.apache.commons.lang</artifactId>
 			<version>${commons.lang.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>net.sf.taverna.t2.security</groupId>
-			<artifactId>credential-manager</artifactId>
-			<version>${t2.security.version}</version>
-		</dependency>
 
 		<dependency>
 			<groupId>junit</groupId>
@@ -66,14 +83,18 @@
                         <version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>net.sf.taverna.t2.activities</groupId>
-			<artifactId>activity-test-utils</artifactId>
-			<version>${t2.activities.version}</version>
-			<scope>test</scope>
-		</dependency>
 	</dependencies>
         <repositories>
+
+    <repository>
+      <id>apache.snapshots</id>
+      <name>Apache Snapshot Repository</name>
+      <url>http://repository.apache.org/snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+    </repository>
+
                 <repository>
                         <releases />
                         <snapshots>
@@ -94,9 +115,10 @@
                 </repository>
         </repositories>
         <scm>
-                <connection>scm:git:https://github.com/taverna/taverna-rshell-activity.git</connection>
-                <developerConnection>scm:git:ssh://git@github.com/taverna/taverna-rshell-activity.git</developerConnection>
-                <url>https://github.com/taverna/taverna-rshell-activity/</url>
+                <connection>scm:git:https://github.com/taverna-extras/taverna-rshell-activity.git</connection>
+                <developerConnection>scm:git:ssh://git@github.com/taverna-extras/taverna-rshell-activity.git</developerConnection>
+                <url>https://github.com/taverna-extras/taverna-rshell-activity/</url>
                 <tag>HEAD</tag>
         </scm>
+	<url>https://github.com/taverna-extras/taverna-rshell-activity/</url>
 </project>

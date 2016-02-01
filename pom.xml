@@ -55,7 +55,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.apache.taverna.engine</groupId>
-			<artifactId>activity-test-utils</artifactId>
+			<artifactId>taverna-activity-test-utils</artifactId>
 			<version>${taverna.engine.version}</version>
 			<scope>test</scope>
 		</dependency>

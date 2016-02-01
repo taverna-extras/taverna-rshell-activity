@@ -30,12 +30,12 @@ package net.sf.taverna.t2.activities.rshell;
 
 import java.io.Serializable;
 
-import net.sf.taverna.t2.workflowmodel.processor.config.ConfigurationBean;
-import net.sf.taverna.t2.workflowmodel.processor.config.ConfigurationProperty;
+import org.apache.taverna.workflowmodel.processor.config.ConfigurationBean;
+import org.apache.taverna.workflowmodel.processor.config.ConfigurationProperty;
 
 /**
  * Class containing the connection settings
- * 
+ *
  */
 @ConfigurationBean(uri = RshellActivity.URI + "#Connection")
 public class RshellConnectionSettings implements Serializable {
@@ -71,7 +71,7 @@ public class RshellConnectionSettings implements Serializable {
 
     /**
      * Constructor of the rshell connection settings
-     * 
+     *
      * @param host
      *            the host name
      * @param port
@@ -84,7 +84,7 @@ public class RshellConnectionSettings implements Serializable {
 
     /**
      * Method for getting the host
-     * 
+     *
      * @return the host
      */
     public String getHost() {
@@ -93,7 +93,7 @@ public class RshellConnectionSettings implements Serializable {
 
     /**
      * Method for setting the host
-     * 
+     *
      * @param host
      *            the new host value
      */
@@ -104,7 +104,7 @@ public class RshellConnectionSettings implements Serializable {
 
     /**
      * Method for getting the port number
-     * 
+     *
      * @return the port number
      */
     public int getPort() {
@@ -113,7 +113,7 @@ public class RshellConnectionSettings implements Serializable {
 
     /**
      * Method for setting the port value
-     * 
+     *
      * @param port
      *            the new port value
      */
@@ -126,7 +126,7 @@ public class RshellConnectionSettings implements Serializable {
 
     /**
      * Method for setting the port value
-     * 
+     *
      * @param port
      *            the new port value
      */
@@ -136,7 +136,7 @@ public class RshellConnectionSettings implements Serializable {
 
     /**
      * Method for getting the username
-     * 
+     *
      * @return the username
      */
     public String getUsername() {
@@ -145,7 +145,7 @@ public class RshellConnectionSettings implements Serializable {
 
     /**
      * Method for setting the username
-     * 
+     *
      * @param username
      *            the new username
      */
@@ -156,7 +156,7 @@ public class RshellConnectionSettings implements Serializable {
 
     /**
      * Method for getting the password
-     * 
+     *
      * @return the password
      */
     public String getPassword() {
@@ -165,7 +165,7 @@ public class RshellConnectionSettings implements Serializable {
 
     /**
      * Method for setting the password
-     * 
+     *
      * @param password
      *            the new password
      */
@@ -176,7 +176,7 @@ public class RshellConnectionSettings implements Serializable {
 
     /**
      * Method for getting the keep session alive setting
-     * 
+     *
      * @return the value for keep session alive
      */
     public boolean isKeepSessionAlive() {
@@ -185,7 +185,7 @@ public class RshellConnectionSettings implements Serializable {
 
     /**
      * Method for setting the keep session alive
-     * 
+     *
      * @param keepSessionAlive
      *            the new value
      */
@@ -196,7 +196,7 @@ public class RshellConnectionSettings implements Serializable {
 
     /**
      * Method for setting the keep session alive
-     * 
+     *
      * @param keepSessionAlive
      *            the new value
      */
@@ -209,7 +209,7 @@ public class RshellConnectionSettings implements Serializable {
      * Method for overriding the equals method Two connections settings are
      * equal, if all their settings are equal (host, port, username, password
      * and keep session alive)
-     * 
+     *
      * @param anObject
      *            the object to compare to
      * @return true if the connections are equal
@@ -226,7 +226,7 @@ public class RshellConnectionSettings implements Serializable {
 
     /**
      * Method overriding the hashcode function
-     * 
+     *
      * @return the hash code
      */
     public int hashCode() {

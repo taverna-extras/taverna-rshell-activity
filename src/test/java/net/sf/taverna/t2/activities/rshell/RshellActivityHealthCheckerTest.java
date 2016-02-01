@@ -29,10 +29,10 @@ import java.util.ArrayList;
 
 import net.sf.taverna.t2.activities.rshell.RshellActivity;
 import net.sf.taverna.t2.activities.rshell.RshellActivityHealthChecker;
-import net.sf.taverna.t2.visit.VisitReport;
-import net.sf.taverna.t2.visit.VisitReport.Status;
-import net.sf.taverna.t2.workflowmodel.processor.activity.AbstractActivity;
-import net.sf.taverna.t2.workflowmodel.processor.activity.ActivityConfigurationException;
+import org.apache.taverna.visit.VisitReport;
+import org.apache.taverna.visit.VisitReport.Status;
+import org.apache.taverna.workflowmodel.processor.activity.AbstractActivity;
+import org.apache.taverna.workflowmodel.processor.activity.ActivityConfigurationException;
 
 import org.junit.Before;
 import org.junit.Test;

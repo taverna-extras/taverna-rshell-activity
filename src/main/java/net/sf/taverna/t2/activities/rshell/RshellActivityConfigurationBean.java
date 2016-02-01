@@ -30,13 +30,15 @@ package net.sf.taverna.t2.activities.rshell;
 import java.util.ArrayList;
 import java.util.List;
 
-import net.sf.taverna.t2.workflowmodel.processor.activity.config.ActivityPortsDefinitionBean;
-import net.sf.taverna.t2.workflowmodel.processor.config.ConfigurationBean;
-import net.sf.taverna.t2.workflowmodel.processor.config.ConfigurationProperty;
+import org.apache.taverna.workflowmodel.processor.activity.config.ActivityPortsDefinitionBean;
+import org.apache.taverna.workflowmodel.processor.config.ConfigurationBean;
+import org.apache.taverna.workflowmodel.processor.config.ConfigurationProperty;
+
+
 
 /**
  * A configuration bean specific to the Rshell activity.
- * 
+ *
  */
 @ConfigurationBean(uri = RshellActivity.URI + "#Config")
 public class RshellActivityConfigurationBean extends
@@ -67,7 +69,7 @@ public class RshellActivityConfigurationBean extends
 
     /**
      * Returns the script.
-     * 
+     *
      * @return the script
      */
     public String getScript() {
@@ -79,7 +81,7 @@ public class RshellActivityConfigurationBean extends
 
     /**
      * Sets the script.
-     * 
+     *
      * @param script
      *            the new script
      */
@@ -90,7 +92,7 @@ public class RshellActivityConfigurationBean extends
 
     /**
      * Returns the connectionSettings.
-     * 
+     *
      * @return the connectionSettings
      */
     public RshellConnectionSettings getConnectionSettings() {
@@ -102,7 +104,7 @@ public class RshellActivityConfigurationBean extends
 
     /**
      * Sets the connectionSettings.
-     * 
+     *
      * @param connectionSettings
      *            the new connectionSettings
      */
@@ -114,7 +116,7 @@ public class RshellActivityConfigurationBean extends
 
     /**
      * Returns the inputSymanticTypes.
-     * 
+     *
      * @return the inputSymanticTypes
      */
     public List<RShellPortSymanticTypeBean> getInputSymanticTypes() {
@@ -123,7 +125,7 @@ public class RshellActivityConfigurationBean extends
 
     /**
      * Sets the inputSymanticTypes.
-     * 
+     *
      * @param inputSymanticTypes
      *            the new inputSymanticTypes
      */
@@ -135,7 +137,7 @@ public class RshellActivityConfigurationBean extends
 
     /**
      * Returns the outputSymanticTypes.
-     * 
+     *
      * @return the outputSymanticTypes
      */
     public List<RShellPortSymanticTypeBean> getOutputSymanticTypes() {
@@ -144,7 +146,7 @@ public class RshellActivityConfigurationBean extends
 
     /**
      * Sets the outputSymanticTypes.
-     * 
+     *
      * @param outputSymanticTypes
      *            the new outputSymanticTypes
      */

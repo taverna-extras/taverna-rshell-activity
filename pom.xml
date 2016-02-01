@@ -14,6 +14,7 @@
 	<name>Taverna Rshell Activity</name>
 <properties>
   <taverna.engine.version>3.1.0-incubating-SNAPSHOT</taverna.engine.version>
+<org.rosuda.version>200910</org.rosuda.version>
 </properties>
 	<build>
 		<plugins>
